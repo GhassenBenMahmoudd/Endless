@@ -1,0 +1,38 @@
+<br>
+<br>
+<div class="container" style="margin-left:550px">
+    <h3>Add Logistic</h3>
+    <form   [formGroup]="myform" >
+      <div class="row col-4">
+          <label class="form-label" >Titre</label>
+          <input type="text" class="form-control" formControlName="titre" id="titre"/>
+          <div  class="alert alert-danger" *ngIf="titreMg && titreMg.invalid && titreMg.touched">Ce champs est Obligatoire</div>
+      </div>
+     
+<br>
+
+      <div class="row col-4">
+        <label class="form-label">Image</label>
+        <input type="file" class="form-control" formControlName="image" (change)="upload($event)" id="img"/>
+        
+      </div>
+      <br>
+     <div class="row col-4">
+        <input type="submit" value="Add" class="btn btn-primary button"  (click)="ajouter()" [disabled]="myform.invalid" uk-toggle="target: #my-id" id="ajout">
+    </div>
+  </form>
+  <div id="my-id" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <div *ngIf="message!='Erreur'">
+        <p id="alert" class="alert alert-primary" role="alert" >{{message}}</p>
+      </div>
+      <div *ngIf="message=='Erreur'">
+        <p class="alert alert-danger" role="alert" >{{message}}</p>
+      </div>
+        
+        <p class="uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button" (click)="naviguer()" >Fermer</button>
+        </p>
+    </div>
+</div>
+</div>

@@ -1,0 +1,172 @@
+<form #f="ngForm" (ngSubmit)="register(f)"  >
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10" >
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-body">
+  
+      <div class="uk-inline">
+        <span class="uk-form-icon" uk-icon="icon: happy"></span>
+        <input class="uk-input"  name="clubName" #clubName="ngModel" ngModel required
+          placeholder="Club Name" type="text">
+          <p class="alert alert-danger" *ngIf="clubName.errors?.required && clubName.touched">
+              Club Name is required !
+          </p>
+    </div> 
+    
+    <div class="uk-margin">
+      <div class="uk-inline">
+        <label>Category</label>
+          <select id="category" class="uk-input"
+          name="category" #category="ngModel"  ngModel required>
+            <option value="Charity" selected>Charity</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Youth">Youth</option>
+            <option value="other">other</option>
+          </select>
+      </div>
+      </div>
+      
+   
+    <div class="uk-inline">
+      <input class="uk-input"  name="phone" #phone="ngModel" ngModel required
+        placeholder="Phone Number"type="text">
+        <p class="alert alert-danger" *ngIf="phone.errors?.required && phone.touched">
+           Phone Number is required !
+        </p> 
+  </div>
+
+  <div class="uk-margin">
+      <div class="uk-inline">
+        <label>State</label>
+          <select id="classe" class="uk-input"
+          name="classe" #classe="ngModel"  ngModel required>
+          <option value="Ariana" selected>أريانة</option>
+          <option value="Tunis">تونس</option>
+          <option value="Beja">باجة</option>
+          <option value="Bizerte">بنزرت</option>
+          <option value="Ben Arous">بن عروس</option>
+          <option value="Tataouine">تطاوين</option>
+          <option value="Touzeur">توزر</option>
+          <option value="Jendouba">جندوبة</option>
+          <option value="Zaghouen">زغوان</option>
+          <option value="Seliana">سليانة</option>
+          <option value="Soussa">سوسة</option>
+          <option value="Sidi Bouzid">سيدي بوزيد</option>
+          <option value="Sfax">صفاقس</option>
+          <option value="Gabes">قابس</option>
+          <option value="Gbeli">قبلي</option>
+          <option value="gasrine">القصرين</option>
+          <option value="gafsa">قفصة</option>
+          <option value="kairaouen">القيروان</option>
+          <option value="kef">الكاف</option>
+          <option value="mednine">مدنين</option>
+          <option value="monastir">المنستير</option>
+          <option value="manouba">منوبة</option>
+          <option value="mahdia">المهدية</option>
+          <option value="nabeul">نابل</option>
+          </select>
+      </div>
+      </div>
+    
+      <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: happy"></span>
+          <input class="uk-input"  name="fiscalId" #fiscalId="ngModel" ngModel required
+            placeholder="Fiscal ID" type="text">
+            <p class="alert alert-danger" *ngIf="fiscalId.errors?.required && fiscalId.touched">
+              Fiscal ID is required !
+            </p>
+      </div> 
+<br>
+<div class="uk-inline">
+  <span class="uk-form-icon" uk-icon="icon: happy"></span>
+  <input class="uk-input"  name="adresse" #adresse="ngModel" ngModel required
+    placeholder="Adresse" type="text">
+    <p class="alert alert-danger" *ngIf="adresse.errors?.required && adresse.touched">
+      Adresse is required !
+    </p>
+</div> 
+<br>
+      <div class="uk-inline">
+          <span class="uk-form-icon" uk-icon="icon: happy"></span>
+          <input class="uk-input"  name="presidentName" #presidentName="ngModel" ngModel required
+            placeholder="President Name" type="text">
+            <p class="alert alert-danger" *ngIf="presidentName.errors?.required && presidentName.touched">
+              President Name is required !
+            </p>
+      </div> 
+      <br>
+      <div class="uk-inline">
+          
+          <input class="uk-input"  name="contact" #contact="ngModel" ngModel required
+            placeholder="Contact" type="text">
+            <p class="alert alert-danger" *ngIf="contact.errors?.required && contact.touched">
+               Contact is required !
+            </p> 
+      </div>
+      
+   
+  <div class="uk-margin">
+    <div class="uk-inline">
+        <span class="uk-form-icon" uk-icon="icon: grid"></span>
+        <input class="uk-input" placeholder="image" type="text"
+        name="image" #image="ngModel"  ngModel required>
+    </div>
+  </div>
+  
+ 
+  <div class="uk-margin">
+  <div class="uk-inline">
+      <input class="uk-input" placeholder="RIB Carte Bancaire" type="text"
+      name="rib" #rib="ngModel"  ngModel required>
+  </div>
+  </div>
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                <input class="uk-input" type="email" placeholder="xxx@yyy.zz"
+                name="email" #email="ngModel" ngModel required>
+                <p class="alert alert-danger" *ngIf="email.errors?.required && email.touched">
+                    Email is required
+                  </p>
+            </div>
+        </div>
+  
+    
+        <div class="uk-margin">
+            <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                <input class="uk-input" type="password" placeholder="Password"
+                 name="password" #password="ngModel" minlength="8" ngModel required>
+                 <p class="alert alert-danger" *ngIf="password.errors?.required && password.touched">
+                    password is required
+                  </p>
+                  <p class="alert alert-danger" *ngIf="password.errors?.minlength && password.touched">
+                    password should be at least 8 characters 
+                  </p>
+            </div>
+            <br>
+            <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                <input class="uk-input" type="password" placeholder="Confirm Password"
+                 name="confirmPassword" #confirmPassword="ngModel" minlength="8" ngModel required>
+                 <p class="alert alert-danger" *ngIf="confirmPassword.errors?.required && confirmPassword.errors?.minlength &&confirmPassword.touched">
+                    password is required
+                  </p>
+                  <p class="alert alert-danger" *ngIf="confirmPassword.value!==password.value && confirmPassword.touched">
+                    Not equal
+                  </p>
+            </div>
+            
+        </div>
+    <button type="submit" class="btn btn-success" style="width: 100%;" [disabled]="f.invalid">Register</button>
+    <br>
+    
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  </div></form>
