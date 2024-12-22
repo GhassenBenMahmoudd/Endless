@@ -5,7 +5,6 @@ Cette application web est conçue pour répondre aux besoins des clubs et associ
 L'application offre une interface conviviale et des fonctionnalités adaptées à divers aspects de la gestion, allant de la planification à l'exécution.
 ![image](https://github.com/user-attachments/assets/28fd0a38-e351-467b-9829-6b6068bd1fab)
 ![image](https://github.com/user-attachments/assets/a4f9eaac-e4f4-4fbf-8a60-7af3f077c7c2)
-![image](https://github.com/user-attachments/assets/63a88199-d4b8-4394-8358-d6ee13e6a69c)
 
 
 **Fonctionnalités principales**
