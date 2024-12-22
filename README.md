@@ -3,7 +3,7 @@ L'application vise à fournir une solution centralisée pour gérer efficacement
 # Description
 Cette application web est conçue pour répondre aux besoins des clubs et associations en matière de gestion d'événements. Elle simplifie l'organisation, améliore la coordination, et propose des outils performants pour assurer le succès des événements.
 L'application offre une interface conviviale et des fonctionnalités adaptées à divers aspects de la gestion, allant de la planification à l'exécution.
-[![Watch the video](https://img.youtube.com/vi/watch?v=lUGaQWeW8tA/0.jpg)](https://www.youtube.com/watch?v=lUGaQWeW8tA)
+[![Watch the video]([https://img.youtube.com/vi/watch?v=lUGaQWeW8tA/0.jpg](https://1.bp.blogspot.com/-zaoiLHspoKI/XeI_0uFAeCI/AAAAAAAAF38/CyHgdY8bdOQ7d979yOJ0voSIA8b5bAF2wCLcBGAsYHQ/s1600/Youtube-Icon-2000x2000.png))](https://www.youtube.com/watch?v=lUGaQWeW8tA)
 
 ![image](https://github.com/user-attachments/assets/28fd0a38-e351-467b-9829-6b6068bd1fab)
 ![image](https://github.com/user-attachments/assets/a4f9eaac-e4f4-4fbf-8a60-7af3f077c7c2)
